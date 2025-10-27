@@ -42,7 +42,7 @@ function draw() {
   
   //leaf
   noStroke();
-  fill(1, 166, 103);
+  fill(1, 190, 131);
   
   beginShape();
   curveVertex(10, height/2);
