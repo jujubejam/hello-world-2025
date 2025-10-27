@@ -31,6 +31,7 @@ function setup() {
     y[i] = 0;
   }
   
+
 }
 
   
@@ -38,6 +39,31 @@ function setup() {
 function draw() { 
   
   background(214,183,234);
+  
+  //leaf
+  noStroke();
+  fill(1, 166, 103);
+  
+  beginShape();
+  curveVertex(10, height/2);
+  curveVertex(10, height/2);
+  
+  curveVertex(width/2-30, 20);
+  
+  //leaf-right end
+  curveVertex(width-10, height/2);
+  
+  curveVertex(width/2-30, height -20);
+  
+  curveVertex(10, height/2);
+  curveVertex(10, height/2);
+
+  endShape();
+  
+  //leaf stem?
+  stroke(1,209,147)
+  strokeWeight(4)
+  bezier(10, height/2, width/2-50, height/2-30, width/2+50, height/2-30, width-10, height/2);
   
   //eat leaf
   noStroke();
@@ -110,4 +136,5 @@ function draw() {
   ellipse(0,17,8,8);
   
   pop();
+  
 }
