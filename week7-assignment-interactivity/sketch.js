@@ -25,6 +25,7 @@ function setup() {
   }
   
   //body easing gradually increase
+  //setting x[0], y[0] to top-left?
   for (let i=0; i<bodyNum; i++){
     bodyEasing[i] = easing + 0.02 * i
     x[i] = 0;
@@ -45,8 +46,8 @@ function draw() {
   fill(1, 190, 131);
   
   beginShape();
-  curveVertex(10, height/2);
-  curveVertex(10, height/2);
+  curveVertex(30, height/2);
+  curveVertex(30, height/2);
   
   curveVertex(width/2-30, 20);
   
@@ -55,20 +56,20 @@ function draw() {
   
   curveVertex(width/2-30, height -20);
   
-  curveVertex(10, height/2);
-  curveVertex(10, height/2);
+  curveVertex(30, height/2);
+  curveVertex(30, height/2);
 
   endShape();
   
   //leaf stem?
   stroke(1,209,147)
-  strokeWeight(4)
-  bezier(10, height/2, width/2-50, height/2-30, width/2+50, height/2-30, width-10, height/2);
+  strokeWeight(10)
+  bezier(10, height/2, width/2-50, height/2-30, width/2+50, height/2-30, width-20, height/2);
   
-  //eat leaf
-  noStroke();
-  fill("white");
-  ellipse(mouseX, mouseY, 30, 30);
+//   //eat leaf
+//   noStroke();
+//   fill("white");
+//   ellipse(mouseX, mouseY, 30, 30);
   
   
   x[0] += (mouseX - x[0]) * bodyEasing[0];
