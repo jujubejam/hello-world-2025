@@ -4,6 +4,14 @@ this is my homework repo
 
 Final Project Update:
 
+    Week 11 (Nov 24, 2025)
+    Working on sending image from p5.js to dropbox
+
+
+    Week 10 (Nov 17, 2025)
+    Finalize concept
+
+
     Week 9 (Nov 10, 2025)
     State changes from DEFAULT to DRAW when user press ENTER
     DRAW state is still buggy
